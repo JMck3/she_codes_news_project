@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+    <a href="{% url 'news:newStory' %}">Write New Story</a>
+
+    <h2>Latest News</h2>
+
+    <form class="add_your_class" method="GET" action="" >
+    <input class="add_your_class" type="search" name="search"> 
+    <button class="add_your_class" type="submit"> Search </button>
+    </form>
+
+    <div id="latest-stories">
+        {% if latest_stories %}
+            {% for story in latest_stories %}
+                {% include "./storyCard.html" with story=story position=forloop.counter %}
+                {% comment %} <p>{{ story.title }}</p> {% endcomment %}
+            {% endfor %}
+        {% else %}
+            <p>No stories are available.</p>
+        {% endif %}
+    </div>
+
+    <div id="all-stories">
+        {% if latest_stories %}
+            {% for story in all_stories %}
+                {% include "./storyCard.html" with story=story %}
+                {% comment %} <p>{{ story.title }}</p> {% endcomment %}
+            {% endfor %}
+        {% else %}
+            <p>No stories are available.</p>
+        {% endif %}
+    </div>
+
+{% endblock %}

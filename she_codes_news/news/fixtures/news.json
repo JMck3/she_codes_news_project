@@ -41,7 +41,7 @@
     },
     {
       "model": "news.newsstory",
-      "pk": 5,
+      "pk": 1,
       "fields": {
         "title": "Where to find the best steak in Perth?",
         "author": 1,

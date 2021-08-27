@@ -15,7 +15,7 @@ class IndexView(generic.ListView):
         print(self.request.GET.get('search'))
         search_var=self.request.GET.get('search','')
         context = super().get_context_data(**kwargs)
-        context['latest_stories'] = NewsStory.objects.filter(title__contains=search_var)#author__name
+        context['latest_stories'] = NewsStory.objects.filter(title__contains=search_var).order_by('-pub_date')#author__name
         context['all_stories'] = NewsStory.objects.order_by('-pub_date').filter(title=search_var)#[3:]
         return context
 

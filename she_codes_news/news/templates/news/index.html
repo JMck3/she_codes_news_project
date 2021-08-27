@@ -31,7 +31,6 @@
         {% if latest_stories %}
             {% for story in all_stories %}
                 {% include "./storyCard.html" with story=story %}
-                {% comment %} <p>{{ story.title }}</p> {% endcomment %}
             {% endfor %}
         {% else %}
             <p>No stories are available.</p>

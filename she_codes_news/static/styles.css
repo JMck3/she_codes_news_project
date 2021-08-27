@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
-    background-color: rgb(240, 239, 239);
+    background-color:rgb(122,68,161);
 }
 
 header {
@@ -23,10 +24,12 @@ h1 {
 }
 
 h2 {
-   font-family: 'Montserrat Subrayada', sans-serif; 
+   font-family: 'Patrick Hand', cursive; 
+   color: whitesmoke;
 }
 
 h3 {
+    font-family: 'Patrick Hand', cursive;
     font-size: 2rem;
     margin: 0;
 }
@@ -46,9 +49,13 @@ nav {
 a {
     margin: 2px;
     text-decoration: none;
-    color: #000;
+    color:whitesmoke ;
 }
 
 a, p {
     font-family: monospace;
+}
+
+.h1orange {
+    color: rgb(229,149,55);
 }

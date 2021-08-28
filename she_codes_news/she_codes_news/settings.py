@@ -98,6 +98,17 @@ DATABASES = {
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd1b2qvk9nvrc86',
+        'USER': 'cmnchdxewrjqum',
+        'PASSWORD': 'ff2ce7c7e0b87326602c28cbc6daaf4a6f04adaedd7647cc5506364e94693d62',
+        'HOST': 'ec2-52-203-74-38.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 

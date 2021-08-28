@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
     background-color:rgb(122,68,161);
@@ -17,19 +17,19 @@ img {
 }
 
 h1 {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-size: 4rem;
     margin: 0;
 }
 
 h2 {
-   font-family: 'Patrick Hand', cursive; 
+   font-family: 'Raleway', sans-serif; 
    color: whitesmoke;
 }
 
 h3 {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     margin: 0;
 }
@@ -37,6 +37,10 @@ h3 {
 #header-text {
     flex-basis: 80%;
     display: flex;
+}
+
+h4 {
+    color: whitesmoke;
 }
 
 nav {
@@ -54,8 +58,23 @@ a {
 
 a, p {
     font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;    
 }
 
-.h1orange {
+p {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;    
+    font-variant: small-caps;
+    color: whitesmoke;
+}
+
+a:hover{
     color: rgb(229,149,55);
+}
+
+.orange {
+    color: rgb(229,149,55);
+    display: inline-block;
 }

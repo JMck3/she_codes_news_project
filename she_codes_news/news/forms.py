@@ -8,6 +8,12 @@ class StoryForm(ModelForm):
         model = NewsStory
         fields = [''] # anything from form field
         fields = ['title', 'pub_date', 'content', 'img_url']
+        labels = {
+            'title': 'Story Title',
+            'pub_date': 'Select Date',
+            'content': 'Tell us about your pet',
+            'img_url': 'We would love a picture! Upload your URL here',
+        }
         widgets = {
             'pub_date': forms.DateInput(format=('%m/%d/%Y'),
         attrs={'class':'form-control', 'placeholder':'Select a date', 'type':'date'}),

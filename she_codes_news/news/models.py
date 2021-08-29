@@ -7,7 +7,7 @@ class NewsStory(models.Model):
         get_user_model(),
         on_delete=models.CASCADE
     )
-    pub_date = models.DateTimeField() 
+    pub_date = models.DateTimeField()
     content = models.TextField()
     img_url = models.URLField(default='https://placedog.net/200/300')
 

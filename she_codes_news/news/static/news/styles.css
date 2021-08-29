@@ -86,4 +86,8 @@
     float: right;
     margin: 0 0 10px 10px;
     width: 50%;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 10% 35%;
 }
